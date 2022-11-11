@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  height: 64px;
+  width: 100vw;
+  background-color: #1d2335;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+nav i {
+  color: white;
+  font-size: 30px;
+}
+nav ul {
+  color: white;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 30%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+}
+section {
+  height: 100vh;
+  width: 100vw;
+  background-color: #23263a;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.social-item {
+  height: 70px;
+  width: 70px;
+  border: 2.5px solid #fd4a55;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.social-items {
+  display: flex;
+  justify-content: flex;
+  gap: 20px;
+}
+.home-right {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom-color: transparent;
+}
+#Home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.first-text {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+.second-text {
+  color: white;
+  text-align: left;
+  font-size: 30px;
+}
+#Services {
+  color: #fd4a55;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-decoration: underline;
+
+}
+.Services-text li {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#About {
+  color: #fd4a55;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: underline;
+}
+#Skills {
+  color: #fd4a55;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+}
+#Contact {
+  color: #fd4a55;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+}
