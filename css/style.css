@@ -6,6 +6,17 @@
   text-decoration: none;
   font-family: "Montserrat Alternates", sans-serif;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #1f2235;
+}
+li {
+  list-style: none;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -18,10 +29,11 @@ nav {
   position: sticky;
   top: 0;
   align-items: center;
+  z-index: 1;
 }
 nav i {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 nav ul {
   color: white;
@@ -33,9 +45,9 @@ nav ul {
   font-weight: 600;
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  background-color: #23263a;
+  padding-top: 60px;
 }
 a {
   color: white;
@@ -51,62 +63,136 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: 0.5s;
 }
 .social-items {
   display: flex;
   justify-content: flex;
   gap: 20px;
 }
+.social-item:hover {
+  transform: scale(1.2);
+}
 .home-right {
   display: flex;
   justify-content: space-evenly;
-  border-bottom-color: transparent;
 }
 #Home {
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #23263a;
 }
 .first-text {
   color: white;
   text-decoration: none;
   text-align: left;
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 27px;
 }
 .second-text {
   color: white;
   text-align: left;
-  font-size: 30px;
+  font-size: 19px;
+  margin-top: 8px;
 }
 #Services {
   color: #fd4a55;
   text-align: center;
-  font-size: 35px;
-  font-family: "Montserrat Alternates", sans-serif;
-  text-decoration: underline;
-
+  font-size: 20px;
+  padding-top: 60px;
 }
-.Services-text li {
-    color: white;
-    text-decoration: none;
-    text-align: center;
+.Services-text {
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 #About {
+  height: 100vh;
   color: #fd4a55;
-  font-size: 35px;
+  font-size: 20px;
   text-align: center;
   text-decoration: underline;
 }
 #Skills {
+  height: 100vh;
   color: #fd4a55;
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
   text-decoration: underline;
 }
 #Contact {
+  height: 100vh;
   color: #fd4a55;
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
   text-decoration: underline;
+}
+.title {
+  color: #fd4a55;
+
+  text-decoration: underline;
+}
+.image-container {
+  height: 400px;
+  width: 270px;
+  position: relative;
+}
+.image-container img {
+  height: 400px;
+  width: 270px;
+  object-fit: cover;
+}
+.overlaye {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(35, 38, 58, 1) 100%
+  );
+}
+.specialities {
+  height: 200px;
+  width: 200px;
+  color: #fd4a55;
+  border: 2.5px solid transparent;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: #23263a;
+  text-align: left;
+  padding: 20px 10px;
+}
+.specialities h5 {
+  text-transform: capitalize;
+  margin: 10px 0;
+  color: white;
+}
+.specialities p {
+  color: white;
+}
+.grid {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 30px;
+  margin: auto;
+  width: fit-content;
+}
+.press-here {
+  display: flex;
+  border: 2.5px solid transparent;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 60px;
+  width: 100vw;
+  padding: 10px 10px;
+  text-transform: capitalize;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
 }
